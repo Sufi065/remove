@@ -11,8 +11,7 @@ void Remove(char input[]){
     {
         for(int i=1;i<=l;i++)
           input[i-1]=input[i];
-    Remove(input);
-        
+    Remove(input);   
     }
     else
     Remove(input+1);
@@ -25,6 +24,5 @@ int main()
  cin>>input;
  Remove(input);
  cout<<input<<endl;
-
     return 0;
 }
